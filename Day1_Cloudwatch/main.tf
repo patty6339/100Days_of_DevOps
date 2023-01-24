@@ -12,8 +12,8 @@ resource "aws_cloudwatch_metric_alarm" "instance-health-check" {
   statistic                 = "Average"
   threshold                 = "1"
   alarm_description         = "This metric monitors ec2 health status"
-  alarm_actions             = [ "arn:aws:sns:us-east-1:663868801530:wapassword" ]
+  alarm_actions             = [ "arn:aws:sns:us-east-XXXXXXXXXXXXXXXXX" ]
 dimensions = {
-    InstanceId = "i-0b7ed3d16a55bc165"
+    InstanceId = "XXXXXXXXXXXXXX"
   }
 }
